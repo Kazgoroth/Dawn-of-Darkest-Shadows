@@ -1,45 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dawn of Darkest Shadows</title>
   <style>
     body {
-      background-color: #0a0a0a;
-      color: #f0f0f0;
+      margin: 0;
+      background-color: #0b0b0b;
       font-family: 'Arial', sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 2rem;
+      color: #ffffff;
+      text-align: center;
+    }
+    .banner {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+    }
+    .logo {
+      width: 140px;
+      margin: 20px auto;
     }
     h1 {
-      color: crimson;
+      font-size: 2.5em;
+      margin: 0.5em 0;
+      font-family: 'Georgia', serif;
+      text-shadow: 0 0 10px crimson;
     }
-    a {
-      color: lightblue;
+    p.tagline {
+      font-size: 1.2em;
+      color: #ccc;
+      margin: 0 1em 2em;
+      font-style: italic;
+    }
+    .bandcamp-link {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: crimson;
+      color: white;
       text-decoration: none;
-      margin-top: 1rem;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.3s;
     }
-    img.banner {
-      max-width: 100%;
-      border-radius: 1rem;
-      margin-bottom: 2rem;
-    }
-    img.logo {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      margin-bottom: 1rem;
+    .bandcamp-link:hover {
+      background-color: darkred;
     }
   </style>
 </head>
 <body>
-  <img src="banner.jpg" alt="Bannière" class="banner">
-  <img src="logo.png" alt="Logo" class="logo">
+  <img src="BANNIERE.jpg" alt="Bannière" class="banner">
+  <img src="LOGO.png" alt="Logo" class="logo">
   <h1>Dawn of Darkest Shadows</h1>
-  <p>Bienvenue dans l’univers musical entre ombre et lumière.</p>
-  <a href="https://elrktronivecstasy.bandcamp.com" target="_blank">🔗 Ma musique sur Bandcamp</a>
+  <p class="tagline">Entrez dans la plus sombre des ombres, fermez les yeux et commencez votre voyage onirique...</p>
+  <a class="bandcamp-link" href="https://elrktronivecstasy.bandcamp.com" target="_blank">Écouter sur Bandcamp</a>
 </body>
 </html>
