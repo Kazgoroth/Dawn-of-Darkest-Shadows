@@ -2,38 +2,66 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dawn of Darkest Shadows</title>
   <style>
     body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
       background-color: #0d0d0d;
-      color: white;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 20px;
+      color: #f5f5f5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
     }
-    img {
-      max-width: 100%;
+    header {
+      width: 100%;
+      max-height: 400px;
+      overflow: hidden;
+    }
+    header img {
+      width: 100%;
       height: auto;
+      display: block;
     }
-    a {
-      display: inline-block;
-      margin-top: 20px;
+    h1 {
+      margin-top: 30px;
+      font-size: 36px;
       color: #ff5555;
-      font-size: 24px;
-      text-decoration: none;
-      border: 1px solid #ff5555;
-      padding: 10px 20px;
-      border-radius: 5px;
     }
-    a:hover {
-      background-color: #ff5555;
-      color: black;
+    a.bandcamp-link {
+      margin: 30px 0;
+      color: #ff5555;
+      font-size: 20px;
+      text-decoration: none;
+      border: 2px solid #ff5555;
+      padding: 12px 25px;
+      border-radius: 6px;
+      transition: background 0.3s, color 0.3s;
+    }
+    a.bandcamp-link:hover {
+      background: #ff5555;
+      color: #0d0d0d;
+    }
+    footer {
+      margin-top: auto;
+      padding: 20px;
+      font-size: 14px;
+      color: #777;
     }
   </style>
 </head>
 <body>
-  <img src="banner.jpg" alt="Bannière Dawn of Darkest Shadows">
+  <header>
+    <img src="banner.jpg" alt="Bannière Dawn of Darkest Shadows">
+  </header>
   <h1>Dawn of Darkest Shadows</h1>
-  <a href="https://Dawn_of_Darkest_Shadows.bandcamp.com" target="_blank">Écouter sur Bandcamp</a>
+  <a class="bandcamp-link" href="https://dawnofdarkestshadows.bandcamp.com" target="_blank">Écouter sur Bandcamp</a>
+  <footer>
+    &copy; 2025 Kazgoroth – Tous droits réservés
+  </footer>
 </body>
 </html>
