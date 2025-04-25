@@ -3,65 +3,104 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dawn of Darkest Shadows</title>
+  <title>Ombre & Lumière – Kazgoroth</title>
   <style>
     body {
       margin: 0;
       padding: 0;
-      font-family: 'Arial', sans-serif;
-      background-color: #0d0d0d;
-      color: #f5f5f5;
+      background: #0a0a0a;
+      color: #f0f0f0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: flex-start;
-      min-height: 100vh;
     }
+
     header {
       width: 100%;
-      max-height: 400px;
-      overflow: hidden;
+      position: relative;
     }
-    header img {
+
+    header img.banner {
       width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+    }
+
+    header img.logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 100px;
       height: auto;
-      display: block;
+      opacity: 0.85;
     }
+
     h1 {
-      margin-top: 30px;
-      font-size: 36px;
-      color: #ff5555;
+      margin: 30px 0 10px;
+      font-size: 2.8em;
+      text-align: center;
+      color: #ffffff;
     }
-    a.bandcamp-link {
-      margin: 30px 0;
-      color: #ff5555;
-      font-size: 20px;
-      text-decoration: none;
-      border: 2px solid #ff5555;
-      padding: 12px 25px;
-      border-radius: 6px;
-      transition: background 0.3s, color 0.3s;
+
+    p.tagline {
+      font-size: 1.2em;
+      font-style: italic;
+      text-align: center;
+      color: #cccccc;
+      margin-bottom: 30px;
     }
-    a.bandcamp-link:hover {
+
+    .bandcamp-player {
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto 20px;
+      border: 0;
+    }
+
+    .bandcamp-link {
+      display: inline-block;
+      margin: 10px auto 40px;
       background: #ff5555;
-      color: #0d0d0d;
+      color: #0a0a0a;
+      padding: 12px 24px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.3s ease;
     }
+
+    .bandcamp-link:hover {
+      background: #ff2222;
+    }
+
     footer {
       margin-top: auto;
       padding: 20px;
-      font-size: 14px;
-      color: #777;
+      font-size: 0.9em;
+      color: #888;
     }
   </style>
 </head>
 <body>
+
   <header>
-    <img src="banner.jpg" alt="Bannière Dawn of Darkest Shadows">
+    <img class="banner" src="banner.jpg" alt="Bannière Ombre et Lumière">
+    <img class="logo" src="logo.png" alt="Logo Kazgoroth">
   </header>
-  <h1>Dawn of Darkest Shadows</h1>
-  <a class="bandcamp-link" href="https://dawnofdarkestshadows.bandcamp.com" target="_blank">Écouter sur Bandcamp</a>
+
+  <h1>Ombre & Lumière</h1>
+  <p class="tagline">« Entrez dans la plus sombre des ombres… Fermez les yeux et commencez votre voyage onirique. »</p>
+
+  <iframe class="bandcamp-player" title="Lecteur Bandcamp"
+    src="https://bandcamp.com/EmbeddedPlayer/album=0000000000/size=large/bgcol=333333/linkcol=ffffff/artwork=small/transparent=true/"
+    seamless></iframe>
+
+  <a class="bandcamp-link" href="https://dawnofdarkestshadows.bandcamp.com" target="_blank">Écouter tout sur Bandcamp</a>
+
   <footer>
     &copy; 2025 Kazgoroth – Tous droits réservés
   </footer>
+
 </body>
 </html>
